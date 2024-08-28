@@ -23,7 +23,7 @@
 
 
 ## 사용된 라이브러리
-  - [unsloth](https://github.com/unslothai/unsloth): 자연어 처리 모델의 훈련 및 튜닝을 간편하게 만들기 위한 라이브러리, 대규모 언어 모델을 효율적으로 튜닝 가능
+  - [unsloth](https://github.com/unslothai/unsloth): 자연어 처리 모델의 훈련 및 튜닝을 간편하게 만들기 위한 라이브러리
   - [transformers](https://github.com/huggingface/transformers): 자연어 처리 모델을 위한 라이브러리
   - [datasets](https://github.com/huggingface/datasets): 데이터셋 처리 및 관리 라이브러리
   - [bitsandbytes](https://github.com/TimDettmers/bitsandbytes): 최적화된 연산을 위한 라이브러리
