@@ -1,4 +1,4 @@
-###### 개인 프로젝트
+###### 개인 프로젝트 / *추후 RAG, DPO, Continual Learning에 관한 내용도 추가 예정입니다.*
 
 # CodeMind-Extended
 - 본 프로젝트는 goorm CodeMind팀의 [최종 프로젝트](https://github.com/LimYeri/CodeMind_project)를 확장한 개인 연구입니다. 이 프로젝트에서는 Llama3-8B-Instruct 모델을 Fine-Tuning하기 위해 unsloth 라이브러리를 사용합니다.
@@ -136,4 +136,3 @@ trainer = SFTTrainer(
 - 모델의 출력은 학습 데이터에 기반하므로 항상 정확하지 않을 수 있습니다.
 - 중요한 결정이나 실세계 문제 해결에 모델 출력을 사용하기 전에 반드시 검증이 필요합니다.
   
-###### 추후 RAG, DPO, Continual Learning에 관한 내용도 추가 예정입니다.
