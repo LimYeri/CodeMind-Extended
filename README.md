@@ -5,7 +5,7 @@
 
 ---
 
-### 모델 세부 정보
+## 모델 세부 정보
   - **모델 이름**: [LimYeri/CodeMind-Llama3-8B-unsloth_v4-one](https://huggingface.co/LimYeri/CodeMind-Llama3-8B-unsloth_v4-one)
   - **기본 모델**: meta-llama/Meta-Llama-3-8B-Instruct
   - **unsloth 모델**: unsloth/llama-3-8b-Instruct-bnb-4bit
@@ -13,16 +13,16 @@
   - **라이선스**: MIT
 
 
-### 주요 기능
+## 주요 기능
   - 문제 유형 및 접근법 설명
   - Python 정답 코드 생성
 
 
-### 훈련 데이터
+## 훈련 데이터
   - [**LeetCode Python Solutions 통합물**](https://huggingface.co/datasets/LimYeri/LeetCode_Python_Solutions_v2): Leetcode 문제의 Python 솔루션
 
 
-### 사용된 라이브러리
+## 사용된 라이브러리
   - [unsloth](https://github.com/unslothai/unsloth): 자연어 처리 모델의 훈련 및 튜닝을 간편하게 만들기 위한 라이브러리, 대규모 언어 모델을 효율적으로 튜닝 가능
   - [transformers](https://github.com/huggingface/transformers): 자연어 처리 모델을 위한 라이브러리
   - [datasets](https://github.com/huggingface/datasets): 데이터셋 처리 및 관리 라이브러리
@@ -32,14 +32,14 @@
   - [pandas](https://github.com/pandas-dev/pandas): 데이터 조작을 위한 라이브러리
 
 
-### 파일 구조
+## 파일 구조
   - **dataset/**: 데이터셋 파일을 포함합니다.
   - **fine-tuning/**: fine tuning 관련 노트북 및 스크립트를 포함합니다.
   - **demo.ipynb**: 데모 노트북으로 모델 사용 예제가 포함되어 있습니다.
 
 ---
 
-### 사용 방법
+## 사용 방법
 이 모델은 HuggingFace의 모델 허브를 통해 액세스할 수 있으며, API를 사용하여 응용 프로그램에 통합할 수 있습니다. 코딩 문제 또는 프로그래밍 관련 질문을 제공하면 모델이 관련 설명, 코드 스니펫 또는 가이드를 생성합니다.
 
 ```python
@@ -63,9 +63,9 @@ text = answer[0].split("assistant")[1].strip()
 display(Markdown(text))
 ```
 
-### 훈련 과정
+## 훈련 과정
 
-#### 모델 및 토크나이저 로드
+### 모델 및 토크나이저 로드
 ```python
 # 자세한 사항은 fine-tuning/Llama3 QLoRA unsloth - python solutions-v4 - one.ipynb 확인
 max_seq_length = 8192 # Choose any! We auto support RoPE Scaling internally!
@@ -80,7 +80,7 @@ model, tokenizer = FastLanguageModel.from_pretrained(
 )
 ```
 
-#### LoRA 구성 및 모델 준비
+### LoRA 구성 및 모델 준비
 ```python
 model = FastLanguageModel.get_peft_model(
     model,
@@ -97,7 +97,7 @@ model = FastLanguageModel.get_peft_model(
 )
 ```
 
-#### 훈련
+### 훈련
 ```python
 from trl import SFTTrainer
 from transformers import TrainingArguments
@@ -132,7 +132,7 @@ trainer = SFTTrainer(
 )
 ```
 
-#### 제한 사항 및 윤리적 고려사항
+## 제한 사항 및 윤리적 고려사항
 - 모델의 출력은 학습 데이터에 기반하므로 항상 정확하지 않을 수 있습니다.
 - 중요한 결정이나 실세계 문제 해결에 모델 출력을 사용하기 전에 반드시 검증이 필요합니다.
   
