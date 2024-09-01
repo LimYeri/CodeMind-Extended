@@ -7,8 +7,12 @@
 
 ## 모델 세부 정보
   - **모델 이름**: [LimYeri/CodeMind-Llama3-8B-unsloth_v4-one](https://huggingface.co/LimYeri/CodeMind-Llama3-8B-unsloth_v4-one)
-  - **기본 모델**: meta-llama/Meta-Llama-3-8B-Instruct
-  - **unsloth 모델**: unsloth/llama-3-8b-Instruct-bnb-4bit
+  - **기본 모델**:
+    -  meta-llama/Meta-Llama-3.1-8B-Instruct
+    -  meta-llama/Meta-Llama-3-8B-Instruct
+  - **unsloth 모델**:
+    - unsloth/Meta-Llama-3.1-8B-Instruct
+    - unsloth/llama-3-8b-Instruct-bnb-4bit
   - **언어**: 영어
   - **라이선스**: MIT
 
@@ -19,7 +23,9 @@
 
 
 ## 훈련 데이터
-  - [**LeetCode Python Solutions 통합물**](https://huggingface.co/datasets/LimYeri/LeetCode_Python_Solutions_v2): Leetcode 문제의 Python 솔루션
+  - [**LimYeri/LeetCode_Python_Solutions_v2**](https://huggingface.co/datasets/LimYeri/LeetCode_Python_Solutions_v2): Leetcode 문제의 Python 솔루션
+  - [**LimYeri/LeetCode_Python_Solutions_Data**](https://huggingface.co/datasets/LimYeri/LeetCode_Python_Solutions_Data): Leetcode 문제의 Python 솔루션
+    ###### *데이터 내용은 같습니다.*
 
 
 ## 사용된 라이브러리
@@ -33,7 +39,7 @@
 
 
 ## 파일 구조
-  - **dataset/**: 데이터셋 파일을 포함합니다.
+  - **dataset/**: 데이터 세트 파일을 포함합니다.
   - **fine-tuning/**: fine tuning 관련 노트북 및 스크립트를 포함합니다.
   - **demo.ipynb**: 데모 노트북으로 모델 사용 예제가 포함되어 있습니다.
 
