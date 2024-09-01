@@ -1,7 +1,7 @@
 ###### 개인 프로젝트 / *추후 RAG, DPO, Continual Learning에 관한 내용도 추가 예정입니다.*
 
 # CodeMind-Extended
-- 본 프로젝트는 goorm CodeMind팀의 [파이널 프로젝트](https://github.com/LimYeri/CodeMind_project)를 확장한 **개인 연구**입니다. 이 프로젝트에서는 Llama3-8B-Instruct 모델을 Fine-Tuning하기 위해 unsloth 라이브러리를 사용합니다.
+- 본 프로젝트는 goorm CodeMind팀의 [파이널 프로젝트](https://github.com/LimYeri/CodeMind_project)를 확장한 **개인 연구**입니다. 이 프로젝트에서는 Llama3.1-8B-Instruct 모델을 Fine-Tuning하기 위해 unsloth 라이브러리를 사용합니다.
 - CodeMind Project : **코딩 테스트 문제 해결과 학습을 보조하기 위해 개발된 언어 모델입니다.** 이 모델은 LeetCode 유저들이 작성한 포스팅 글을 활용해 Fine-Tuning 되었으며, 코딩 테스트에 특화된 답안을 제시하는 것을 목표로 합니다.
 
 ---
