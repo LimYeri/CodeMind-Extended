@@ -45,7 +45,8 @@
 ## 파일 구조
   - **dataset/**: 데이터 세트 파일을 포함합니다.
   - **fine-tuning/**: fine tuning 관련 노트북 및 스크립트를 포함합니다.
-  - **demo.ipynb**: 데모 노트북으로 모델 사용 예제가 포함되어 있습니다.
+  - **demo-Llama3.1.ipynb**: 데모 노트북으로 LimYeri/CodeMind-Llama3.1-8B-unsloth 모델 사용 예제가 포함되어 있습니다.
+  - **demo-Llama3.ipynb**: 데모 노트북으로 LimYeri/CodeMind-Llama3-8B-unsloth_v4-one 모델 사용 예제가 포함되어 있습니다.
 
 ---
 
