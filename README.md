@@ -52,7 +52,7 @@
 ###### LimYeri/CodeMind-Llama3.1-8B-unsloth
 
 ```python
-# 자세한 사항은 demo.ipynb 확인
+# 자세한 사항은 demo-Llama3.1.ipynb 확인
 from unsloth import FastLanguageModel
 from unsloth.chat_templates import get_chat_template
 from IPython.display import display, Markdown
